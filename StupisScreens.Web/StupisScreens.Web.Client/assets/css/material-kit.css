@@ -1,0 +1,112 @@
+/*           Animations              */
+.animation-transition-general, .carousel .carousel-indicators li {
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+.carousel .carousel-control {
+  width: 50%;
+}
+.carousel .carousel-control.left, .carousel .carousel-control.right {
+  background-image: none;
+}
+.carousel .carousel-control .material-icons,
+.carousel .carousel-control .fa {
+  display: none;
+}
+.carousel .left {
+  cursor: url("../img/arrow-left.png"), url("../img/arrow-left.cur"), default !important;
+}
+.carousel .right {
+  cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important;
+}
+.carousel .carousel-indicators {
+  bottom: 5px;
+}
+.carousel .carousel-indicators li,
+.carousel .carousel-indicators .active {
+  margin: 11px 10px;
+}
+.carousel .carousel-indicators li {
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+.carousel .carousel-indicators .active {
+  margin-top: 10px;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+.carousel .carousel-caption {
+  padding-bottom: 45px;
+}
+.carousel .carousel-caption .material-icons {
+  position: relative;
+  top: 5px;
+}
+
+
+/*# sourceMappingURL=material-kit.css.map */
+.modal-content {
+  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 3px;
+  border: none;
+}
+.modal-content .modal-header {
+  border-bottom: none;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 0;
+  padding-left: 24px;
+}
+.modal-content .modal-body {
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+}
+.modal-content .modal-footer {
+  border-top: none;
+  padding: 7px;
+}
+.modal-content .modal-footer button {
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: auto;
+}
+.modal-content .modal-footer button.pull-left {
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  left: -5px;
+}
+.modal-content .modal-footer button + button {
+  margin-bottom: 16px;
+}
+.modal-content .modal-body + .modal-footer {
+  padding-top: 0;
+}
+
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal .modal-dialog {
+  margin-top: 130px;
+}
+.modal .modal-header .close {
+  color: #494949;
+  opacity: 1;
+}
+.modal .modal-header .close:hover, .modal .modal-header .close:focus {
+  opacity: 1;
+  color: #ff0000;
+}
+

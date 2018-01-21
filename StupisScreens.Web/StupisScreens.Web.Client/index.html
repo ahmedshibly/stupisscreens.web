@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Stupis Screens - A Stupid Wallpaper app</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/gaia.css" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    
+</head>
+
+<!-- Sart Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   
+   <script>
+    
+    function sendMail() 
+    {
+       var add  = "siblee77@outlook.com";
+       window.open('mailto:'+ add +'?subject='+ emailsubject.value + '&body=' + emailbody.value );
+       
+
+       $('#myModal').modal('toggle'); //or  $('#IDModal').modal('hide');
+       //console.log(document.modal);
+
+    }
+    </script>  
+    
+    <div class="modal-dialog modal-dialog-kit">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i type="button" class="close pe-7s-close" data-dismiss="modal" aria-hidden="true">
+                        
+                    </i>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                        <form action="javascript:sendMail();" method="post" >
+                            <div class="form-group">
+                              <label>Email subject</label>
+                              <input type="text" placeholder="jihadhasan@stupios.xyz" class="form-control form-control-plain" id="emailsubject">
+                            </div>
+                            
+
+                            <div class="form-group">
+                                    <label>Email message</label>
+                                    <textarea  type="text" rows="3" placeholder="Write down your suggestion" class="form-control form-control-plain" id="emailbody"></textarea>
+                                  
+                           </div>
+                                  
+
+
+                            <button type="submit" class="btn btn-danger btn-fill">Submit</button>
+                          </form> 
+
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!--  End Modal -->
+    
+
+
+
+    <body>
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    Stupis Screens
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    <li>
+                        <a href="samples.html">Samples</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Connect
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="https://www.facebook.com/stupios" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/shibly_77" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/shibly_77" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://playstorelink" class="btn btn-danger btn-fill">Download now</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-red">
+            <div class="image"
+                style="background-image: url('assets/img/header-1.jpeg')">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <p class="txt-meet-phone" >Meet</p>
+                        <h1 class="title-modern">Stupis Screens</h1>
+                        <h3>A better way to be creative with your wallpapers !</h2>
+                        <!-- <div class="separator line-separator"></div> -->
+                    </div>
+
+                    <div class="button-get-started">
+                        <a href="http://www.creative-tim.com/product/gaia-bootstrap-template" target="_blank" class="btn btn-white btn-fill btn-lg ">
+                            Watch Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- What is  -->
+     <div class="section">
+      
+            <!-- <div class="image" style="background-image:url('assets/img/header-2.jpeg')">
+            </div> -->
+            <div class="container ">
+                <div >
+                    <div class="row">
+                        <div class="title-area">
+                            <h2>What is Stupis screens </h2>
+                            <div class="separator separator-danger">✻</div>
+                            <p class="description">Almost person tries to find a perfect and nice looking walllpaper for their device, that results in an endless ammount of searching over the internet and kills a lots of times Most of the time you wont get as unique walllpaper for you. Stupis Screens tries to solve this. It creates qualitiy 2D and 3D graphics using powerfull tools maths for you in a single click. Wallpapers are genaretd randomly so there will not be anyone who will get a same wallpaper as you. 
+                                Stupis Screens lets you to create 2D wallpapers from various categories called material, exotic, patterns and Flat. In material you will be able to create material desing wallpapers. Exotic offers you a cast ammunt of minimal looking images inlcuding nature, tech and many more. Patterns will create gorgeous looking patterns for you using circles, rects, lines and many more. In Flat you will be able to create flat images with gradients and various images effects. You will also be able to create 3D wallpapers consists of many awsome 3D objects.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="team">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-danger">
+                                                    <img alt="..." class="img-circle" src="assets/img/faces/face_1.jpg"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Exotic</h3>
+                                                    <p class="small-text"></p>                                                    
+                                                    <p class="description">I miss the old Kanye I gotta say at that time I’d like to meet Kanye And I promise the power is in the people and I will use the power given by the people to bring everything I have back to the people.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-danger">
+                                                    <img alt="..." class="img-circle" src="assets/img/faces/face_4.jpg"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Material</h3>
+                                                    <p class="small-text"></p>
+                                                    <p class="description">I miss the old Kanye I gotta say at that time I’d like to meet Kanye And I promise the power is in the people and I will use the power given by the people to bring everything I have back to the people.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-danger">
+                                                    <img alt="..." class="img-circle" src="assets/img/faces/face_3.jpg"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Habijabi</h3>
+                                                    <p class="small-text"></p>
+                                                    <p class="description">I miss the old Kanye I gotta say at that time I’d like to meet Kanye And I promise the power is in the people and I will use the power given by the people to bring everything I have back to the people.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Features -->
+    <div class="section section-features">
+           
+        <div class="container">
+            
+            <!-- Title section -->
+            <div class="row">
+                <div class="title-area">
+                    <h2>Features</h2>
+                    <div class="separator separator-danger">✻</div>
+                    <p class="description">Stupis Screens offers greate features to provide you the power to cretae wallpapers as your wish</p>
+                </div>
+            </div>
+
+            <!-- Content section  -->
+            <div class="row">
+
+                <!-- Create wallpaper  -->
+                <div class="col-md-4">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <i class="pe-7s-photo-gallery"></i>
+                        </div>
+                        <h3>Create wallpapers</h3>
+                        <p class="description">Create endless ammount of wallpaper by clicking a single button in your home.</p>
+                    </div>
+                </div>
+
+                <!-- Editor -->
+                <div class="col-md-4">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <i class="pe-7s-edit"></i>
+                        </div>
+                        <h3>Edit 'em all</h3>
+                        <p class="description">We have strong editor and that will allow you to edit and gain control over.</p>
+                    </div>
+                </div>
+
+                <!-- Download -->
+                <div class="col-md-4">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <i class="pe-7s-download"></i>
+                        </div>
+                        <h3>Don't loss 'em</h3>
+                        <p class="description">You will not loss any image while ccreating images, we keep a cached .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+    <!-- Showkcase -->
+    <div class="section section-our-clients-freebie ">
+
+            <div class="row">
+                    <div class="title-area">
+                            <h5 class="subtitle text-gray">See...</h5>
+                        <h2>How it looks</h2>
+                        <div class="separator separator-danger">✻</div>
+                        <p class="description">Stupis screens has been made with great care and simplcity/usuablity in mind</p>
+                    </div>
+                </div>
+            
+                 <div id="carousel">
+        
+            <div class="container container-screenshots">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+
+						<!-- Carousel Card -->
+						
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+								<div class="carousel slide" data-ride="carousel">
+
+									<!-- Indicators -->
+									<ol class="carousel-indicators">
+										<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+										<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+									</ol>
+
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner">
+										<div class="item active">
+											<img src="assets/img/bg2.jpeg" alt="Awesome Image">
+											<div class="carousel-caption">
+											</div>
+										</div>
+										<div class="item">
+											<img src="assets/img/bg3.jpeg" alt="Awesome Image">
+											<div class="carousel-caption">
+											</div>
+										</div>
+										<div class="item">
+											<img src="assets/img/bg4.jpeg" alt="Awesome Image">
+											<div class="carousel-caption">
+											</div>
+										</div>
+									</div>
+
+									<!-- Controls -->
+									<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+										<i class="material-icons">keyboard_arrow_left</i>
+									</a>
+									<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+										<i class="material-icons">keyboard_arrow_right</i>
+									</a>
+								</div>
+							</div>
+						
+						<!-- End Carousel Card -->
+
+                    </div>
+				</div>
+                
+		</div>
+        <h5 class="hint-text" >Click on the image to change</h5>
+         </div>
+    </div>
+
+
+
+    
+    
+    <div class="section section-our-clients-freebie section-features">
+        <div class="container">
+            <div class="title-area">
+                <h5 class="subtitle text-gray">What...</h5>
+                <h2>People says</h2>
+                <div class="separator separator-danger">∎</div>
+            </div>
+
+            <ul class="nav nav-text" role="tablist">
+                <li class="active">
+                    <a href="#testimonial1" role="tab" data-toggle="tab">
+                        <div class="image-clients">
+                            <img alt="..." class="img-circle" src="assets/img/faces/fiyaz.jpg"/>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonial2" role="tab" data-toggle="tab">
+                        <div class="image-clients">
+                            <img alt="..." class="img-circle" src="assets/img/faces/yeasir.jpg"/>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonial3" role="tab" data-toggle="tab">
+                        <div class="image-clients">
+                            <img alt="..." class="img-circle" src="assets/img/faces/face_2.jpg"/>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="testimonial1">
+                    <p class="description description-justify">
+                            <a href="http://fiyazhasan.me/about-me/" class="anchor-default"  target="_blank"> Fiyaz Hasan </a> - " And I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. Now there is only one important color... Green I even had the pink polo I thought I was Kanye I promise I will never let the people down. I want a better life for all! "
+                    </p>
+                </div>
+                <div class="tab-pane" id="testimonial2">
+                    <p class="description description-justify">
+                       <a href="https://www.behance.net/yeasirghost" class="anchor-default" target="_blank"> Yeasir Ahmed </a> - " Green I even had the pink polo I thought I was Kanye I promise I will never let the people down. I want a better life for all! And I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. Now there is only one important color... "
+                    </p>
+                </div>
+                <div class="tab-pane" id="testimonial3">
+                    <p class="description description-justify"> 
+                            <a href="https://twitter.com/jihadhasanjoy" class="anchor-default" target="_blank"> Jihad Joy </a> - " I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. The 'Gaia' team did a great work while we were collaborating. They provided a vision that was in deep connection with our needs and helped us achieve our goals. "
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="section section-small section-get-started">
+        <div class="parallax filter">
+            <div class="image"
+                style="background-image: url('assets/img/office-1.jpeg')">
+            </div>
+            <div class="container">
+                <div class="title-area">
+                    <h5 class="subtitle text-gray">Lets...</h5>                        
+                    <h2 class="text-white">Make it better !</h2>
+                    <div class="separator line-separator">♦</div>
+                    <p class="description"> 
+                        You are the one why Stupis Screens stands for. You can make it better by droping ideas, suggestion, problems to us.
+                        your ideas will be taken care of, and will be added as soon as possible. Bug reports will have most priority, we will try to 
+                        solve suggested bug with no delay.                                                
+                    </p>
+                </div>
+
+                <div class="button-get-started">
+                    <a href="#gaia" class="btn btn-danger btn-fill btn-lg"  data-toggle="modal" data-target="#myModal" >Drop a Suggestion/bug</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer footer-big footer-color-black" data-color="black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <div class="info">
+                        <h5 class="title">About</h5>
+                        <p class="description" >
+                            Stupis Screens is crafted with a dicent ammount of love by stupios a C# guy orginialy named Shibly who loves to think stupidly.
+                        </br></br>I would ove to hear somthing from you, You are most welcome to give a feedback or suggestion to make this app better.
+                        </p>
+                    </div>
+                </div>
+               
+                
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
+                    <div class="info">
+                        <h5 class="title"> Help and Support</h5>
+                         <nav>
+                            <ul>
+                                <li>
+                                    <a href="contactus.html">Contact Us</a>
+                                </li>
+                                                               
+                                <li>
+                                    <a href="privacy.html">Privacy Policy</a>
+                                </li>
+                               
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                 © <script> document.write(new Date().getFullYear()) </script> Stupios
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<!--   core js files    -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+<script src="assets/js/material.min.js"></script>
+
+
+
+<!--  js library for devices recognition -->
+<script type="text/javascript" src="assets/js/modernizr.js"></script>
+
+<!--  script for google maps   -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
+<script type="text/javascript" src="assets/js/gaia.js"></script>
+
+<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+
+</html>
