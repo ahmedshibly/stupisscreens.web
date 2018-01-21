@@ -243,10 +243,10 @@ a:hover {
 }
 
 .separator-danger {
-  color: #e78b90;
+  color: #e78b90 !important;
 }
 .separator-danger:before, .separator-danger:after {
-  border-color: #e78b90;
+  border-color: #e78b90 !important;
 }
 
 p.description {
@@ -1114,9 +1114,11 @@ a,
   background: #50236F;
 }
 .filter.filter-color-red:before {
-  background: #e68991;
+  background: #b94443;
 }
-
+.filter.filter-color-white:before {
+  background: #ffffff;
+}
 .filter.filter-gradient-black:before {
   background: #1f1c2c;
   /* Old browsers */
@@ -2505,7 +2507,7 @@ a,
 .section-get-started .text-description,
 .section-header-freebie .text-description,
 .section-our-team-freebie .text-description {
-  color: #fff;
+  color: #777777;
   margin: 40px auto;
   max-width: 760px;
 }
@@ -3804,4 +3806,11 @@ body {
     display: none;
   }
   
+}
+.g-title{
+  color : #333 !important;
+}
+
+.g-des{
+  color: #777777 !important;
 }
