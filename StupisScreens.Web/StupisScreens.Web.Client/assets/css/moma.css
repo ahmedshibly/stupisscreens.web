@@ -93,14 +93,12 @@
     text-align: center;
 }
 
-
 .modal-open .gal-container .modal{
-	background-color: rgba(0,0,0,0.4);
+	background-color:transparent;
 }
 .modal-open .gal-item .modal-body{
 	padding: 0px;
 }
-
 
 .modal-open .gal-item button.close{
     position: absolute;
