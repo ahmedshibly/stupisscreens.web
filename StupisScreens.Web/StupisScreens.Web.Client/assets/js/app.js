@@ -1,18 +1,3 @@
-/*!
-
- =========================================================
- * Gaia Bootstrap Template - v1.0.1
- =========================================================
- 
- * Product Page: https://www.creative-tim.com/product/gaia-bootstrap-template
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/gaia-bootstrap-template/blob/master/LICENSE.md)
- 
- =========================================================
- 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- */
-
 var transparent = true;
 
 var fixedTop = false;
@@ -53,7 +38,7 @@ $(document).ready(function(){
 
     // Init navigation toggle for small screens
     if(window_width < 992 || burger_menu){
-        gaia.initRightMenu();
+        app.initRightMenu();
     }
 
     if($('.content-with-opacity').length != 0){
@@ -67,7 +52,7 @@ $(document).ready(function(){
         var lng = $(this).data('lng');
         var lat = $(this).data('lat');
 
-        gaia.initGoogleMaps(this, lat, lng);
+        app.initGoogleMaps(this, lat, lng);
     });
 
 });
@@ -75,27 +60,27 @@ $(document).ready(function(){
 //activate collapse right menu when the windows is resized
 $(window).resize(function(){
     if($(window).width() < 992){
-        gaia.initRightMenu();
-        //gaia.checkResponsiveImage();
+        app.initRightMenu();
+        //app.checkResponsiveImage();
     }
     if($(window).width() > 992 && !burger_menu){
         $('nav[role="navigation"]').removeClass('navbar-burger');
-        gaia.misc.navbar_menu_visible = 1;
+        app.misc.navbar_menu_visible = 1;
         navbar_initialized = false;
     }
 });
 
 $(window).on('scroll',function(){
 
-    gaia.checkScrollForTransparentNavbar();
+    app.checkScrollForTransparentNavbar();
 
 
     if(window_width > 992){
-        gaia.checkScrollForParallax();
+        app.checkScrollForParallax();
     }
 
     if(content_opacity == 1 ){
-        gaia.checkScrollForContentTransitions();
+        app.checkScrollForContentTransitions();
     }
 
 });
@@ -114,7 +99,7 @@ $('a[data-scroll="true"]').click(function(e){
 
 });
 
-gaia = {
+app = {
     misc:{
         navbar_menu_visible: 0
     },
@@ -124,9 +109,9 @@ gaia = {
             $toggle = $('.navbar-toggle');
             $toggle.click(function (){
 
-                if(gaia.misc.navbar_menu_visible == 1) {
+                if(app.misc.navbar_menu_visible == 1) {
                     $('html').removeClass('nav-open');
-                    gaia.misc.navbar_menu_visible = 0;
+                    app.misc.navbar_menu_visible = 0;
                     $('#bodyClick').remove();
                      setTimeout(function(){
                         $toggle.removeClass('toggled');
@@ -140,7 +125,7 @@ gaia = {
                     div = '<div id="bodyClick"></div>';
                     $(div).appendTo("body").click(function() {
                         $('html').removeClass('nav-open');
-                        gaia.misc.navbar_menu_visible = 0;
+                        app.misc.navbar_menu_visible = 0;
                         $('#bodyClick').remove();
                          setTimeout(function(){
                             $toggle.removeClass('toggled');
@@ -148,7 +133,7 @@ gaia = {
                     });
 
                     $('html').addClass('nav-open');
-                    gaia.misc.navbar_menu_visible = 1;
+                    app.misc.navbar_menu_visible = 1;
 
                 }
             });

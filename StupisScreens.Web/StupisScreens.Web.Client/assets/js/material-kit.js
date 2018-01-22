@@ -1,19 +1,20 @@
+
 /*!
-    
+
  =========================================================
- * Material Kit - v1.1.1.0
+ * Gaia Bootstrap Template - v1.0.1
  =========================================================
  
- * Product Page: http://www.creative-tim.com/product/material-kit
+ * Product Page: https://www.creative-tim.com/product/gaia-bootstrap-template
  * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/timcreative/material-kit/blob/master/LICENSE.md)
+ * Licensed under MIT (https://github.com/creativetimofficial/gaia-bootstrap-template/blob/master/LICENSE.md)
  
  =========================================================
  
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- 
  */
-
+ 
+ 
 var transparent = true;
 
 var transparentDemo = true;
