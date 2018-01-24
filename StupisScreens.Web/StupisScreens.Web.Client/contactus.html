@@ -85,33 +85,44 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="contact-form">
-                        <form action="" method="post">
+                            <script>
+                                    function sendMail() {
+                                        var add = "siblee77@gmail.com";
+
+                                        var bodytxt  = body.value +"\n Sent by \n" + fullname.value + "\n\n ***" + note.body+"***";
+                                        console.log(bodytxt);                 
+                                        window.open('mailto:' + add + '?subject=' + subject.value + '&body=' + bodytxt);
+
+                            
+                                    }
+                                </script>
+                        <form action="javascript:sendMail();" method="post">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Your Full Name</label>
-                                        <input name="name" class="form-control form-control-plain" type="text" placeholder="John Doe" value="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Your Email</label>
-                                        <input name="email" class="form-control form-control-plain" type="text" placeholder="Johndoe@example.com" value="">
+                                        <input name="name" class="form-control form-control-plain" type="text" placeholder="John Doe" value="" id="fullname">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Subject</label>
-                                        <input name="subject" class="form-control form-control-plain" type="text" placeholder="Say hi to you" value="">
+                                        <input name="subject" class="form-control form-control-plain" type="text" placeholder="Say hi to you" value="" id="subject">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Additional Note</label>
+                                        <input name="email" class="form-control form-control-plain" type="text" placeholder="Write your important note." value="" id="note">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8"></textarea>
+                                        <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8" id="body"></textarea>
                                     </div>
                                     <div>
                                         <div class="col-md-2 col-md-offset-5">
-                                            <button class="btn btn-danger btn-fill" type="button">
+                                            <button class="btn btn-danger btn-fill" type="submit">
                                                 Contact
                                             </button>
                                         </div>
