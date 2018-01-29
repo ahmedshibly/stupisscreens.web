@@ -1084,7 +1084,7 @@ a,
   background: #b94443;
 }
 .filter.filter-color-white:before {
-  background: #ffffff;
+  background: rgb(245, 245, 245);
 }
 .filter.filter-gradient-black:before {
   background: #1f1c2c;
@@ -3720,7 +3720,7 @@ body {
 }
 
 .section-features{
-  background: rgb(245, 245, 245);
+  background: rgb(247, 247, 247);
   Padding-bottom: 50px;
 }
 
