@@ -1,24 +1,15 @@
 var transparent = true;
-
 var fixedTop = false;
-
 var navbar_initialized = false;
-
 var scroll;
-
 scroll = ( 2500 - $(window).width() ) / $(window).width();
-
 var window_height;
 var window_width;
-
 var content_opacity = 0;
 var content_transition = 0;
 var no_touch_screen = false;
-
 var burger_menu;
-
 var scroll_distance = 500;
-
 $(document).ready(function(){
     BrowserDetect.init();
 
@@ -46,6 +37,8 @@ $(document).ready(function(){
     }
 
     $navbar = $('.navbar[color-on-scroll]');
+    $download = $('.btn-download');
+    $brand = $(".nav-title-colorful");
     scroll_distance = $navbar.attr('color-on-scroll') || 500;
 
     $('.google-map').each(function(){
@@ -147,11 +140,16 @@ app = {
                 if(transparent) {
                     transparent = false;
                     $navbar.removeClass('navbar-transparent');
+                    $download.addClass('back-gradient-teal');
+                    $brand.html('<span class="logo-l0">S</span><span class="logo-l1">t</span><span class="logo-l2">u</span><span class="logo-l3">p</span><span class="logo-l4">i</span>s<span class="logo-second"> Screens</span>');                    
                 }
             } else {
                 if( !transparent ) {
                     transparent = true;
                     $navbar.addClass('navbar-transparent');
+                    $download.removeClass('back-gradient-teal');
+                    $brand.html("Stupis Screens");                    
+
                 }
             }
     }, 17),
