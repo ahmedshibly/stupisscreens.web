@@ -3850,3 +3850,18 @@ body {
 .logo-l4{
   color: #f88f58;
 }
+
+.test{
+
+  /* http://www.textgradient.com/ */
+  background-image: -webkit-gradient(linear, left top, 90deg, color-stop(0%, #E605C1), color-stop(100%, #3B113B));
+  background-image: -moz-linear-gradient(90deg,#E605C1 0%,#3B113B 100%);
+  background-image: -webkit-linear-gradient(90deg,#E605C1 0%,#3B113B 100%);
+  background-image: -o-linear-gradient(90deg,#E605C1 0%,#3B113B 100%);
+  background-image: -ms-linear-gradient(90deg,#E605C1 0%,#3B113B 100%);
+  background-image: linear-gradient(90deg,#E605C1 0%,#3B113B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position:relative;
+  display:inline-block; /*required*/
+}
