@@ -12,7 +12,7 @@ var burger_menu;
 var scroll_distance = 500;
 $(document).ready(function(){
     BrowserDetect.init();
-
+    
     if(BrowserDetect.browser == 'Explorer' && BrowserDetect.version <= 9){
         $('body').html(better_browser);
     }
