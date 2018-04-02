@@ -298,6 +298,76 @@ body > .navbar-collapse a {
 .info-icon {
   text-align: center;
 }
+
+.feature-div{
+  height: 80vh;
+}
+
+.create-div{
+
+  /* background-color: hotpink; */
+
+}
+
+.editor-div{
+
+  /* background-color: goldenrod; */
+
+}
+
+.download-div{
+
+  /* background-color: forestgreen; */
+
+}
+.ftr-contents{
+  /* background-color: white; */
+  text-align: center;
+  margin-top: 40%;
+}
+
+.create-div-design{
+ background-color: mediumpurple;
+ height: 40vh;
+ width: 40vh;
+ margin-top: 20vh;
+ margin-left: auto;
+ margin-right:0px; 
+ border-top-left-radius: 20vh;
+ border-top-right-radius: 20vh;
+ opacity: .3;
+
+
+}
+
+.editor-div-design{
+  background-color: hotpink;
+  height: 40vh;
+  width: 40vh;
+  margin-top: 20vh;
+  margin-left: 0px;
+  margin-right:Auto; 
+  border-top-left-radius: 20vh;
+  border-bottom-left-radius: 20vh;
+  border-bottom-right-radius: 20vh;
+  opacity: .3;
+
+ }
+
+ .download-div-design{
+  background-color: indigo;
+  height: 40vh;
+  width: 40vh;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right:0px; 
+  border-bottom-left-radius: 20vh;
+  border-bottom-right-radius: 20vh;
+  opacity: .2;
+
+
+ }
+
 .info-icon .icon {
   font-size: 62px;
   line-height: 66px;
@@ -1166,6 +1236,13 @@ a,
 .section-white {
   padding: 0;
 }
+
+.section-what {
+  padding-top: 150px;
+  padding-bottom: 110px;
+  
+}
+
 .section-white .static-image:after {
   position: absolute;
   left: 0;
@@ -3902,4 +3979,14 @@ background-image: linear-gradient(90deg,#EE73F0 0%,#EE73F0 33%,#FF615E 100%);
 -webkit-text-fill-color: transparent;
 position:relative;
 display:inline-block; /*required*/
+}
+
+.btn-rounded{
+   border-radius: 170px !important;
+}
+
+
+
+.btn-fixed-width{
+   width: 135px ;
 }
