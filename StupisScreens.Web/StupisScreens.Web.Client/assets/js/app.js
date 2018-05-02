@@ -140,14 +140,14 @@ app = {
                 if(transparent) {
                     transparent = false;
                     $navbar.removeClass('navbar-transparent');
-                    $download.addClass('back-gradient-teal');
+                    $download.addClass('back-gradient-tranquil');
                     $brand.html('<span class="logo-l0">S</span><span class="logo-l1">t</span><span class="logo-l2">u</span><span class="logo-l3">p</span><span class="logo-l4">i</span>s<span class="logo-second"> Screens</span>');                    
                 }
             } else {
                 if( !transparent ) {
                     transparent = true;
                     $navbar.addClass('navbar-transparent');
-                    $download.removeClass('back-gradient-teal');
+                    $download.removeClass('back-gradient-tranquil');
                     $brand.html("Stupis Screens");                    
 
                 }
