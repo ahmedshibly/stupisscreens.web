@@ -161,10 +161,10 @@ app = {
         	    if(isElementInViewport($elem)){
                   var parent_top = $elem.offset().top;
                   var window_bottom = $(window).scrollTop();
-                  var $image = $elem.children('.image');
+                  var $image = $elem.children('.background-image');
 
-            	  oVal = ((window_bottom - parent_top) / 3);
-                  $image.css('transform','translate3d(0px, ' + oVal + 'px, 0px)');
+            	  oVal = ((window_bottom - parent_top) / 10);
+                //   $image.css('transform','translate3d(0px, ' + oVal + 'px, 0px)');
         	    }
             });
 

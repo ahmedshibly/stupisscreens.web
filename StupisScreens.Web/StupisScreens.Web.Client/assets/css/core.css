@@ -297,9 +297,14 @@ body > .navbar-collapse a {
 }
 
 .info-icon {
-  text-align: center;
   margin-top: 25%;
+  max-width: 350px;
 }
+
+.info-icon-left {
+  
+}
+
 .info-icon .icon {
   font-size: 62px;
   line-height: 66px;
@@ -318,6 +323,15 @@ body > .navbar-collapse a {
   max-width: 110px;
   margin: 0 auto;
 }
+
+.ftr-create{
+  text-align: right;
+}
+.ftr-download{
+  text-align: right;
+}
+
+
 .avatar img {
   width: 100%;
   height: auto;
@@ -966,7 +980,32 @@ a,
   overflow: hidden;
   display: block;
   position: relative;
+
 }
+
+
+.header-background
+{
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/header.png);
+  background-size: auto 100vh;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden; 
+}
+
+.feedback-background{
+  position: relative;
+  height: 80vh;
+  background-image: url(../img/header.png);
+  background-size: auto 80vh;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden; 
+}
+
+
 .section .parallax > img,
 .section .parallax .filter > img,
 .section .static-image > img,
@@ -3908,11 +3947,11 @@ display:inline-block; /*required*/
 
 
 .features-design{
-  background: gray;
+  
   height: 40vh;
   margin-top: 10vh;
   width: 40vh;
-  opacity: .05;
+
 }
 
 .features-design-right{
@@ -3926,18 +3965,35 @@ display:inline-block; /*required*/
 }
 
 .features-design-create{
-  border-radius: 20vh;
+  height: 40vh;
+  background-image: url(../img/header.png);
+  background-position: top center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  border-radius: 50%;
 }
 
+
+
 .features-design-editor{
-  border-top-left-radius: 20vh;
-  border-bottom-right-radius: 20vh;
+  height: 40vh;
+  background-image: url(../img/header.png);
+  background-position: top center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  
 }
 
 .features-design-download{
-  border-top-left-radius: 20vh;
-  border-bottom-left-radius: 20vh;
-  border-top-right-radius: 20vh;
+  height: 40vh;
+  background-image: url(../img/header.png);
+  background-position: top center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  border-radius: 50%;
 }
 
 
@@ -3946,3 +4002,8 @@ display:inline-block; /*required*/
   border-radius: 100px !important;
 }
 
+.section-what
+{
+  margin-top: 12%;
+  margin-bottom: 12%;
+}
